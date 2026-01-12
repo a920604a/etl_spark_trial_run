@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: adtech-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: adtech
+      POSTGRES_USER: adtech_user
+      POSTGRES_PASSWORD: adtech_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U adtech_user -d adtech"]
+      interval: 10s
+      timeout: 5s
+      retries: 5

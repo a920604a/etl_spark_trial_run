@@ -1,0 +1,5 @@
+event_time,user_id,ad_id,campaign_id,event_type,cost,device,country
+2024-01-02 9:00:00,u3,ad_1,c_1,impression,0.02,mobile,JP
+2024-01-02 9:01:00,u3,ad_1,c_1,click,0.5,mobile,JP
+2024-01-02 11:00:00,u4,ad_3,c_3,impression,0.01,tablet,TW
+2024-01-02 11:02:00,u4,ad_3,c_3,click,0.3,tablet,TW
