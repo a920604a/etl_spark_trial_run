@@ -2,3 +2,4 @@ postgres_data/
 
 src/adtech_etl.egg-info/
 .venv
+data/campaign_daily_stats
